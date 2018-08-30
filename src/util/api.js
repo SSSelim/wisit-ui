@@ -7,3 +7,10 @@ export function up() {
     method: methods.GET,
   });
 }
+
+export function newQuestion() {
+  return callApi({
+    uri: "/api/question",
+    method: methods.POST,
+  });
+}
